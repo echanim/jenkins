@@ -1,6 +1,6 @@
 node {
     stage('Clone repository') {
-        git credentialsId: 'chanmin@futuregen.co.kr', url: 'https://github.com/echanim/jenkins.git'
+        git credentialsId: 'docker-access', url: 'https://github.com/echanim/jenkins.git'
     }
 
     stage('Build image') {
